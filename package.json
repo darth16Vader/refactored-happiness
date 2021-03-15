@@ -1,0 +1,58 @@
+{
+  "name": "electreact-template",
+  "version": "0.1.0",
+  "description": "Simple template with electronjs and reactjs",
+  "author": "Nellartsa",
+  "main": "public/electron.js",
+  "build": {
+    "appId": "com.electreact.app"
+  },
+  "homepage": "./",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^12.7.3",
+    "cross-env": "^7.0.3",
+    "electron-is-dev": "^1.2.0",
+    "mdbreact": "^5.0.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.1.0"
+  },
+  "scripts": {
+    "react-start": "cross-env BROWSER=none react-scripts start",
+    "react-build": "react-scripts build",
+    "react-test": "react-scripts test",
+    "react-eject": "react-scripts eject",
+    "electron-build": "electron-builder",
+    "build": "npm run react-build && npm run electron-build",
+    "start": "concurrently \"npm run react-start\" \"wait-on http://localhost:3000 && electron .\" "
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.0",
+    "electron": "^11.3.0",
+    "electron-builder": "^22.9.1",
+    "gh-pages": "^3.1.0",
+    "wait-on": "^5.2.1"
+  }
+}
