@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBTooltip } from "mdbreact";
 import DailyMaterialTable from './table/DailyMaterialTable';
 import TankCutTable from './table/TankCutTable';
@@ -24,9 +24,18 @@ const MaterialConsPage = () => {
                             <div className='d-flex align-items-center flex-grow-1 green-text'>
                                 <i className="fal fa-calendar-day deep-orange-text mr-1"></i> Daily material consumption
                             </div>
-                            <div className='bd-highlight col-example text-light px-1 rounded' style={{backgroundColor:'#ffa000'}}>
-                                <i className="fal fa-sync text-dark"></i>
+                            <MDBTooltip
+                            domElement
+                            tag="span"
+                            placement="top"
+                            >
+                            <div 
+                                className='bd-highlight col-example px-1 rounded cpointer' 
+                                style={{backgroundColor:'#ffa000'}}>
+                                <i className="fal fa-sync"></i>
                             </div>
+                            <span>Refresh Consumption</span>
+                            </MDBTooltip>
                         </div>
                     </div>
                     <div className='card m-1 p-2 shadow'>
@@ -45,9 +54,9 @@ const MaterialConsPage = () => {
                             placement="top"
                             >
                             <div 
-                                className='bd-highlight col-example text-light px-1 rounded cpointer' 
+                                className='bd-highlight col-example px-1 rounded cpointer' 
                                 style={{backgroundColor:'#ffa000'}} onClick={toggle}>
-                                <i className="fal fa-cog text-dark"></i>
+                                <i className="fal fa-cog"></i>
                             </div>
                             <span>Cut-off & Speed settings</span>
                             </MDBTooltip>

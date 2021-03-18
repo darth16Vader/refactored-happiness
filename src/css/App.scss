@@ -1,12 +1,17 @@
-.font-sm {
-  font-size: small;
+@font-face {
+  font-family: 'Arsenal';
+  src: url('../font/Arsenal-Regular.ttf');
 }
 
+.font-sm {
+    font-size: small;
+  }
+  
 .btn.btn-sm {
   padding: 0.2rem 1.6rem !important;
   font-size: 0.64rem;
 }
-
+  
 .input-group-sm > .custom-select,
 .input-group-sm > .form-control,
 .input-group-sm > .input-group-append > .btn,
@@ -21,11 +26,22 @@
 .modal-footer {
   padding: 0.5rem !important;
 }
-
+  
 .cpointer {
   cursor: pointer;
 }
 
+.fa-sync, .fa-cog{
+    &:hover{
+    transform: rotate(180deg);
+    transition: .5s;
+    }
+}
+  
 .close {
   color: antiquewhite !important;
+}
+
+.page-font{
+  font-family: 'Arsenal', sans-serif;
 }

@@ -2,9 +2,6 @@ import React from 'react';
 import { MDBContainer, MDBBtn, MDBModalHeader, MDBModal, MDBModalBody, MDBModalFooter, MDBInputGroup, MDBRow, MDBCol} from 'mdbreact';
 
 const JobOrder = ({modal, toggle}) => {
-
-  console.log(toggle, modal)
-
   return (
     <MDBContainer>
       <MDBModal centered  isOpen={modal} toggle={toggle}>

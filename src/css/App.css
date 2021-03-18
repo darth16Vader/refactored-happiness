@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'Arsenal';
+  src: url("../font/Arsenal-Regular.ttf");
+}
+
+.font-sm {
+  font-size: small;
+}
+
+.btn.btn-sm {
+  padding: 0.2rem 1.6rem !important;
+  font-size: 0.64rem;
+}
+
+.input-group-sm > .custom-select,
+.input-group-sm > .form-control,
+.input-group-sm > .input-group-append > .btn,
+.input-group-sm > .input-group-append > .input-group-text,
+.input-group-sm > .input-group-prepend > .btn,
+.input-group-sm > .input-group-prepend > .input-group-text {
+  font-size: 0.64rem !important;
+}
+
+.modal-header,
+.modal-body,
+.modal-footer {
+  padding: 0.5rem !important;
+}
+
+.cpointer {
+  cursor: pointer;
+}
+
+.fa-sync:hover, .fa-cog:hover {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.close {
+  color: antiquewhite !important;
+}
+
+.page-font {
+  font-family: 'Arsenal', sans-serif;
+}
+/*# sourceMappingURL=App.css.map */

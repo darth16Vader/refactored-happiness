@@ -8,7 +8,7 @@ const BatchingTable = () => {
       <MDBTableHead>
         <tr>
           <th className='font-weight-bold'>JO #</th>
-          <th className='font-weight-bold'>OR #</th>
+          <th className='font-weight-bold'>DR #</th>
           <th className='font-weight-bold'>Customer</th>
           <th className='font-weight-bold'>product</th>
           <th className='font-weight-bold'>formula</th>

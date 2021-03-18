@@ -1,6 +1,5 @@
 import React from 'react'
 import { MDBContainer, MDBRow, MDBCol, MDBInput, MDBIcon, MDBBtn } from "mdbreact";
-
 import './css/login.css'
 
 const Login = () => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { MDBContainer, MDBBtn, MDBModalHeader, MDBModal, MDBModalBody, MDBModalFooter } from 'mdbreact';
-import TankCutTableEdit from '../table/TankCutTableEdit';
+import TankCutTableEdit from './TankCutTableEdit';
 
 const CutSpeedSetUp = ({modal, toggle}) => {
 

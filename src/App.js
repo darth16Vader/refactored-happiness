@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
-import { MDBBtn } from "mdbreact";
+import { MDBBtn, MDBBtnGroup } from "mdbreact";
 import Batching from './components/Batching'
-import './App.css'
+import './css/App.css'
 import BatchDetails from './components/BatchDetails';
 
 const App = () => {
@@ -41,10 +41,16 @@ const App = () => {
         <div className='side-menu-list p-3'>
           <div className='menuclose text-light'><i className="fas fa-times"></i></div>
           <h4 className='text-center text-light'>Menu</h4>
-          <MDBBtn color='primary' size='sm' className='btn-block mb-2'><h2><i className="fas fa-file-alt"></i></h2> master file</MDBBtn>
+          <MDBBtnGroup className='btn-block mb-2' size='sm' vertical>
+            <MDBBtn color="primary" size='sm'><h4><i className="fas fa-file-alt"></i></h4> master file</MDBBtn>
+            <MDBBtn color="primary" size='sm'><h4><i className="fas fa-pencil-alt"></i></h4> formula</MDBBtn>
+            <MDBBtn color="primary" size='sm'><h4><i className="fas fa-print"></i></h4> reports</MDBBtn>
+            <MDBBtn color="amber" size='sm'><h4><i className="fal fa-sign-out-alt"></i></h4> logout</MDBBtn>
+          </MDBBtnGroup>
+          {/* <MDBBtn color='primary' size='sm' className='btn-block mb-2'><h2><i className="fas fa-file-alt"></i></h2> master file</MDBBtn>
           <MDBBtn color='primary' size='sm' className='btn-block mb-2'><h2><i className="fas fa-pencil-alt"></i></h2> formula</MDBBtn>
           <MDBBtn color='primary' size='sm' className='btn-block mb-2'><h2><i className="fas fa-print"></i></h2> reports</MDBBtn>
-          <MDBBtn color='amber' size='sm' className='btn-block mb-2'><h2><i className="fal fa-sign-out-alt"></i></h2> logout</MDBBtn>
+          <MDBBtn color='amber' size='sm' className='btn-block mb-2'><h2><i className="fal fa-sign-out-alt"></i></h2> logout</MDBBtn> */}
         </div>
       </div>
 

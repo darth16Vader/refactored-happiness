@@ -2,8 +2,9 @@
   font-family: 'Orbitron';
   src: url('../font/Orbitron-Regular.ttf');
 }
+
 .batch-op-sec {
-  height: 70vh;
+  height: 67vh;
 }
 
 @mixin circle {
@@ -82,8 +83,9 @@
   background-image: url('../img/MIMIC-FINAL-EDITED.png');
   background-size: 100% auto;
   background-repeat: no-repeat;
-  max-width: 779.08px;
+  width: 779.08px;
   height: 600px;
+  position: fixed;
 }
 
 .e1 {
@@ -420,6 +422,33 @@
   @include circle();
   margin-top: 474.5px;
   margin-left: 373px;
+}
+
+.wh2{
+  height: 10px;
+  width: 25px;
+  background-color: #00c853;
+  position: fixed;
+  margin-top: 278.5px;
+  margin-left: 378.5px;
+}
+
+.wh1{
+  height: 9px;
+  width: 27px;
+  background-color: #00c853;
+  position: fixed;
+  margin-top: 313px;
+  margin-left: 378px;
+}
+
+.hopper-square{
+  height: 9px;
+  width: 30.5px;
+  background-color: #00c853;
+  position: fixed;
+  margin-top: 416px;
+  margin-left: 375px;
 }
 
 .md-textarea,
